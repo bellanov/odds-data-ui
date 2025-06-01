@@ -1,1 +1,2 @@
-import{e}from"./BNRMaQ6w.js";e();
+import { e } from "./BNRMaQ6w.js";
+e();
