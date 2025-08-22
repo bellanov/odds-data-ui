@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
+    "format": "prettier --write .",
     "preview": "vite preview",
     "prepare": "svelte-kit sync || echo ''",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -13,8 +14,7 @@
     "lint": "eslint . --ignore-pattern 'build/*' && prettier --check .",
     "test:unit": "vitest",
     "test": "npm run test:unit -- --run && npm run test:e2e",
-    "test:e2e": "playwright test",
-    "format": "prettier --write ."
+    "test:e2e": "playwright test"
   },
   "devDependencies": {
     "@eslint/compat": "^1.2.5",

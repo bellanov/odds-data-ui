@@ -1,7 +1,7 @@
 
 #!/bin/bash
 #
-# Switch Hosting Environments
+# Switch Hosting Environments.
 
 # User Input
 ENVIRONMENT=$1
@@ -16,8 +16,11 @@ if [ "$ENVIRONMENT" == "qa" ]; then
   SITE_NAME=$QA
 elif [ "$ENVIRONMENT" == "prod" ]; then
   SITE_NAME=$PROD
-else
+elif [ "$ENVIRONMENT" == "dev" ]; then
   SITE_NAME=$DEV
+else
+  echo "Invalid environment specified."
+  exit 1
 fi
 
 # Update Firebase Hosting Site
