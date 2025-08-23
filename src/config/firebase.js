@@ -5,13 +5,13 @@ import "dotenv/config";
 
 // Cloud Function Configuration
 const firebaseConfig = {
-  // eslint-disable-next-line no-undef
+  // Query Account Quota
   getAccountQuota: process.env.ACCOUNT_FUNCTION.replace(/"/g, ""), // Remove quotes if present
-  // eslint-disable-next-line no-undef
+  // Query Events
   getEvents: process.env.EVENTS_FUNCTION.replace(/"/g, ""), // Remove quotes if present
-  // eslint-disable-next-line no-undef
+  // Query Event Odds
   getEventOdds: process.env.EVENT_ODDS_FUNCTION.replace(/"/g, ""), // Remove quotes if present
-  // eslint-disable-next-line no-undef
+  // Query Sports
   getSports: process.env.SPORTS_FUNCTION.replace(/"/g, ""), // Remove quotes if present
 };
 
