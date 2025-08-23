@@ -183,3 +183,12 @@ build
 package
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,node,svelte
+
+### Firebase ###
+.idea
+**/node_modules/*
+**/.firebaserc
+
+### Firebase Patch ###
+.runtimeconfig.json
+.firebase/

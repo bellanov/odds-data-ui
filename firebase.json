@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "odds-data-ui-1748801558-qa",
     "public": "build",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
