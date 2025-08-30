@@ -1,12 +1,32 @@
 {
   "hosting": {
-    "site": "odds-data-ui-1748801558-qa",
+    "site": "odds-data-ui-1748801558-dev",
     "public": "build",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
         "source": "**",
         "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(js|css|woff2|png|svg|jpg|jpeg|ico)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public,max-age=31536000,immutable"
+          }
+        ]
+      },
+      {
+        "source": "**/*.html",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "public,max-age=600"
+          }
+        ]
       }
     ]
   },
